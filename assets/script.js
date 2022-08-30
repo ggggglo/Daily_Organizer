@@ -20,9 +20,14 @@ var olds = hours < time;
 var nows = hours = time;
 var news = hours > time;
 
+console.log(olds);
+console.log(nows);
+console.log(news);
 
 
 
+
+hourcolors();
 
 console.log(text.content);
 console.log(save);
