@@ -1,5 +1,6 @@
 var save = document.querySelector(".saveBtn");
-var text = document.querySelector("textarea")
+var text = document.querySelector("textarea");
+var hours = document.querySelector(".hour")
 
 var today = moment();
 $("#currentDay").text(today.format("LLLL"));
@@ -10,6 +11,18 @@ save.addEventListener('click', function(){
     text = localStorage.getItem("eventStored");
     console.log(text);
 });
+
+var time = moment().format('LT');
+
+console.log(time);
+
+var olds = hours < time;
+var nows = hours = time;
+var news = hours > time;
+
+
+
+
 
 console.log(text.content);
 console.log(save);
