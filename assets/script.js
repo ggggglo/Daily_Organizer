@@ -1,4 +1,9 @@
+var save = document.querySelector(".saveBtn");
+
 var today = moment();
 $("#currentDay").text(today.format("LLLL"));
 
-console.log(today);
+save.addEventListener('click', function(){
+    window.prompt("Hello");
+});
+
