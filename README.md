@@ -1,4 +1,4 @@
-# OrganizeMe
+# Daily Organizer
 A simple planner for your busy day!
 
 # Objective
