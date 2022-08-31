@@ -1,9 +1,14 @@
 body {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
-  line-height: 1;
+  font-family: komet, sans-serif;
+  font-weight: 100;
+  font-style: normal;
 }
 
+h1{
+  font-family: komet, sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
 textarea{
   background: transparent;
   border: none;
@@ -15,7 +20,7 @@ textarea{
 
 .jumbotron {
   text-align: center;
-  background-color: transparent;
+  background-color: #A6E9FA;
   color: black;
   border-radius: 0;
   border-bottom: 10px solid black;
@@ -61,8 +66,8 @@ textarea{
   border-left: 1px solid black;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  background-color: #06AED5;
-  color: white; 
+  background-color: #FAEEAB;
+  color: gray; 
 }
 
 .saveBtn i:hover {

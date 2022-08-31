@@ -101,7 +101,7 @@ function hour10(){
         $("#text2").addClass("past");
 
     } else if (("10") === timeNow) {
-        $("#text2").addClass("persent");
+        $("#text2").addClass("present");
 
     } else if (("10") > timeNow) {
         $("#text2").addClass("future");
