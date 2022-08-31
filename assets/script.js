@@ -9,7 +9,7 @@ var save7 = document.querySelector(".save7");
 var save8 = document.querySelector(".save8");
 var save9 = document.querySelector(".save9");
 
-// Variables for text areas
+// Variables for text areas 
 var text1 = document.querySelector("#text1");
 var text2 = document.querySelector("#text2");
 var text3 = document.querySelector("#text3");
