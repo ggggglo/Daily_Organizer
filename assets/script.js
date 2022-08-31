@@ -1,3 +1,4 @@
+// Variables for save buttons
 var save1 = document.querySelector("#save1");
 var save2 = document.querySelector("#save2");
 var save3 = document.querySelector(".save3");
@@ -8,7 +9,7 @@ var save7 = document.querySelector(".save7");
 var save8 = document.querySelector(".save8");
 var save9 = document.querySelector(".save9");
 
-
+// Variables for text areas
 var text1 = document.querySelector("#text1");
 var text2 = document.querySelector("#text2");
 var text3 = document.querySelector("#text3");
@@ -19,13 +20,15 @@ var text7 = document.querySelector("#text7");
 var text8 = document.querySelector("#text8");
 var text9 = document.querySelector("#text9");
 
-
+// Var for the time-blocks that hold the hours
 var hours = document.querySelector(".hour")
 
+// Variable that shows the current date and time in the header of the page
 var today = moment();
 $("#currentDay").text(today.format("LLLL"));
 
-
+// Line 30-74.
+//Event listeners to save into local storage what is input in the text areas for each time-block
 save1.addEventListener('click', function(){
     var textContent1 = text1.value;
     localStorage.setItem("stored1", textContent1);
@@ -71,6 +74,7 @@ save9.addEventListener('click', function(){
     localStorage.setItem("stored9", textContent9);
 });
 
+// Get items from local storage to display in each of the text areas for each time-block
 $("#text1").val(localStorage.getItem("stored1"));
 $("#text2").val(localStorage.getItem("stored2"));
 $("#text3").val(localStorage.getItem("stored3"));
@@ -81,9 +85,11 @@ $("#text7").val(localStorage.getItem("stored7"));
 $("#text8").val(localStorage.getItem("stored8"));
 $("#text9").val(localStorage.getItem("stored9"));
 
-
+// Varible for the time now in 24 hour format
 var timeNow = moment().format('HH');
 
+//Line 92-198
+//Functions for each time block to set present, past, future classes depending on the current time
 function hour9(){
     if (("09") < timeNow) {
         $("#text1").addClass("past");
@@ -194,6 +200,8 @@ function hour17(){
 
 
 console.log(timeNow);
+
+//Declaration of functions
 hour9();
 hour10();
 hour11();
