@@ -17,7 +17,7 @@ var text5 = document.querySelector("#text5");
 var text6 = document.querySelector("#text6");
 var text7 = document.querySelector("#text7");
 var text8 = document.querySelector("#text8");
-var text8 = document.querySelector("#text9");
+var text9 = document.querySelector("#text9");
 
 
 var hours = document.querySelector(".hour")
@@ -46,8 +46,30 @@ save4.addEventListener('click', function(){
     localStorage.setItem("stored4", textContent4);
 });
 
+save5.addEventListener('click', function(){
+    var textContent5 = text5.value;
+    localStorage.setItem("stored5", textContent5);
+});
 
+save6.addEventListener('click', function(){
+    var textContent6 = text6.value;
+    localStorage.setItem("stored6", textContent6);
+});
 
+save7.addEventListener('click', function(){
+    var textContent7 = text7.value;
+    localStorage.setItem("stored7", textContent7);
+});
+
+save8.addEventListener('click', function(){
+    var textContent8 = text8.value;
+    localStorage.setItem("stored8", textContent8);
+});
+
+save9.addEventListener('click', function(){
+    var textContent9 = text9.value;
+    localStorage.setItem("stored9", textContent9);
+});
 
 $("#text1").val(localStorage.getItem("stored1"));
 $("#text2").val(localStorage.getItem("stored2"));
